@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>LAGRINTA STORE | معدات رياضية احترافية</title>
+<!-- Open Graph للمعاينة عند المشاركة -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LAGRINTA STORE">
+<meta property="og:title" content="LAGRINTA STORE | معدات رياضية احترافية">
+<meta property="og:description" content="بار فيكس قوي ومتين، مثالي لتمارين العقلة. دفع عند الاستلام وتوصيل لـ 69 ولاية.">
+<meta property="og:image" content="https://i.postimg.cc/PfchV8HY/logo-png.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta property="og:url" content="https://lagrinta-store.pages.dev">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LAGRINTA STORE | معدات رياضية احترافية">
+<meta name="twitter:description" content="بار فيكس قوي ومتين. دفع عند الاستلام وتوصيل لـ 69 ولاية.">
+<meta name="twitter:image" content="https://i.postimg.cc/PfchV8HY/logo-png.jpg">
+
+<!-- للجوال -->
+<meta name="theme-color" content="#1e5bff">
+<link rel="apple-touch-icon" href="https://i.postimg.cc/PfchV8HY/logo-png.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff;--bg-soft:#f7f8fa;--bg-field:#f5f6f8;--text:#111;--text-mut:#7a7f8a;
+  --acc:#1e5bff;--acc-grad:linear-gradient(135deg,#1e5bff,#3b82f6);--black:#111;
+  --green:#25D366;--border:#e5e7eb;--radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;padding-bottom:90px}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,select,textarea{font-family:inherit}
+a{color:inherit;text-decoration:none}
+
+.header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--border);padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.header .brand{display:flex;align-items:center;gap:10px}
+.header .brand-logo{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid #111;background:#000}
+.header .brand-text{display:flex;flex-direction:column;line-height:1.1}
+.header .brand-text b{font-size:15px;font-weight:900;letter-spacing:1px;color:#111}
+.header .brand-text span{font-size:10px;color:var(--text-mut);letter-spacing:1.5px;font-weight:600}
+.header .cart-icon{width:40px;height:40px;display:grid;place-items:center;font-size:22px;cursor:pointer}
+
+.gallery{position:relative;width:100%;aspect-ratio:1/1;background:#f5f5f5;overflow:hidden}
+.gallery .slide{display:flex;width:100%;height:100%;transition:transform .35s ease}
+.gallery .slide img{width:100%;height:100%;object-fit:cover;flex-shrink:0}
+.gallery .nav{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;display:grid;place-items:center;font-size:20px;cursor:pointer;transition:.2s}
+.gallery .nav:active{background:rgba(0,0,0,.7)}
+.gallery .nav.prev{left:10px}
+.gallery .nav.next{right:10px}
+.gallery .dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px}
+.gallery .dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.55);transition:.3s}
+.gallery .dots span.active{background:#fff;width:22px;border-radius:4px}
+
+.content{padding:20px 18px}
+.top-badge{display:inline-block;background:#fff3cd;color:#8a6d00;font-size:13px;font-weight:700;padding:6px 14px;border-radius:20px;margin-bottom:12px}
+h1{font-size:26px;font-weight:900;margin-bottom:8px;line-height:1.25}
+h1 .emoji{color:#f4a261}
+.desc{color:var(--text-mut);font-size:15px;margin-bottom:16px}
+
+.features{display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+.feature{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:#333}
+.feature .check{width:24px;height:24px;background:#e8f5e9;color:#2e7d32;border-radius:50%;display:grid;place-items:center;font-size:13px;flex-shrink:0;font-weight:900}
+
+.bottom-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);padding:10px 14px;display:flex;gap:10px;z-index:90;box-shadow:0 -6px 20px rgba(0,0,0,.05)}
+.bottom-bar .btn-buy{flex:1;background:var(--black);color:#fff;border:none;padding:15px;border-radius:14px;font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+.bottom-bar .btn-buy:active{transform:scale(.98)}
+.bottom-bar .btn-call{width:56px;background:var(--green);color:#fff;border:none;border-radius:14px;font-size:24px;display:grid;place-items:center;transition:.2s}
+.bottom-bar .btn-call:active{transform:scale(.95)}
+
+.section-title{font-size:20px;font-weight:900;margin:20px 0 14px;text-align:right}
+.perks-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.perk{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.perk .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-size:20px}
+.perk .ic.green{background:#e8f7ee}
+.perk .ic.blue{background:#e8f0ff}
+.perk .ic.purple{background:#f3e8ff}
+.perk .ic.orange{background:#fff2e0}
+.perk p{font-size:13.5px;font-weight:700;color:#222}
+
+.social-section{background:#0a0a0a;border-radius:20px;padding:24px 20px;text-align:center;margin-bottom:20px}
+.social-section h3{color:#fff;font-size:17px;font-weight:900;margin-bottom:6px}
+.social-section p{color:#888;font-size:13px;margin-bottom:18px}
+.social-links{display:flex;justify-content:center;gap:14px}
+.social-link{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;transition:.3s;position:relative;overflow:hidden}
+.social-link:hover{transform:translateY(-4px)}
+.social-link svg{width:26px;height:26px;fill:#fff;position:relative;z-index:1}
+.social-link.ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.social-link.tt{background:linear-gradient(135deg,#000,#25f4ee,#fe2c55,#000)}
+.social-link.fb{background:linear-gradient(135deg,#1877f2,#0a5bd4)}
+.social-link.shine::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:.6s}
+.social-link.shine:hover::before{left:100%}
+
+.footer{text-align:center;padding:20px 16px 10px;color:var(--text-mut);font-size:12px;border-top:1px solid var(--border);margin-top:10px}
+.footer .brand-mini{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:8px}
+.footer .brand-mini img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:1.5px solid #111}
+
+.modal{position:fixed;inset:0;z-index:200;background:#fff;display:none;flex-direction:column;overflow-y:auto}
+.modal.show{display:flex}
+.modal-head{position:sticky;top:0;background:#fff;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);z-index:10}
+.modal-head .back{width:40px;height:40px;border-radius:50%;background:#f2f3f5;display:grid;place-items:center;font-size:18px}
+.modal-head .title-box{text-align:center;flex:1}
+.modal-head h2{font-size:16px;font-weight:900}
+.modal-head p{font-size:12px;color:var(--text-mut);margin-top:2px}
+.modal-head .bag{width:40px;height:40px;border-radius:50%;background:#f2f3f5;display:grid;place-items:center;font-size:18px}
+.modal-body{padding:18px;max-width:520px;margin:0 auto;width:100%}
+
+.field{margin-bottom:16px}
+.field label{display:block;font-size:14px;font-weight:800;margin-bottom:8px;color:#111;text-align:right}
+.field label .req{color:var(--acc);margin-left:2px}
+.field .wrap{position:relative}
+.field .wrap .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;color:#9aa0ad;pointer-events:none}
+.field input,.field select,.field textarea{width:100%;padding:15px 16px 15px 46px;background:var(--bg-field);border:1.5px solid transparent;border-radius:12px;font-size:15px;color:#111;transition:.2s;text-align:right}
+.field textarea{padding-left:46px;min-height:70px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#a8adb8}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;background:#fff;border-color:#111}
+.field .err{color:#e63946;font-size:12px;margin-top:5px;display:none}
+.field.invalid input,.field.invalid select{border-color:#e63946}
+.field.invalid .err{display:block}
+
+.delivery-title{font-size:14px;font-weight:800;margin-bottom:10px;text-align:right;display:block}
+.delivery-title .req{color:var(--acc);margin-left:2px}
+.delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.d-box{background:var(--bg-field);border:2px solid transparent;border-radius:14px;padding:18px 10px;text-align:center;cursor:pointer;transition:.2s}
+.d-box .d-ic{font-size:26px;margin-bottom:6px}
+.d-box .d-name{font-size:14px;font-weight:800;color:#333}
+.d-box.sel{background:#ececec;border-color:#111}
+.d-box.sel .d-name{color:#000}
+
+.ship-info{background:var(--bg-field);border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:700;color:#333;margin-bottom:16px}
+.ship-info .ic{font-size:18px;margin-left:8px;color:#555}
+
+.summary{background:#f8f9fb;border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:16px}
+.sum-row{display:flex;justify-content:space-between;font-size:14.5px;color:#555;padding:7px 0}
+.sum-row.total{border-top:1px solid #e0e2e7;margin-top:6px;padding-top:12px;font-size:18px;font-weight:900;color:#111}
+
+.btn-submit{width:100%;background:var(--black);color:#fff;border:none;padding:17px;border-radius:14px;font-size:17px;font-weight:800;font-family:inherit;cursor:pointer;transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit:active{transform:scale(.98)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed}
+
+.loader{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.success-screen{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 24px}
+.success-circle{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#d4f5dd,#a8ebbe);display:grid;place-items:center;margin-bottom:26px;position:relative;animation:popIn .5s cubic-bezier(.34,1.56,.64,1)}
+.success-circle::after{content:'';position:absolute;inset:-10px;border-radius:50%;border:2px solid #a8ebbe;opacity:.4;animation:ringPulse 2s ease-out infinite}
+.success-circle .check{font-size:56px;color:#1f9c43;font-weight:900;animation:checkDraw .6s .2s both}
+@keyframes popIn{0%{transform:scale(0)}100%{transform:scale(1)}}
+@keyframes ringPulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.3);opacity:0}}
+@keyframes checkDraw{0%{transform:scale(0) rotate(-45deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
+.success-screen h2{font-size:24px;font-weight:900;margin-bottom:10px;color:#111;animation:fadeUp .5s .3s both}
+.success-screen p{color:var(--text-mut);font-size:15px;margin-bottom:8px;line-height:1.7;animation:fadeUp .5s .4s both}
+.success-screen .highlight{color:var(--acc);font-weight:900}
+.success-screen .btn-done{margin-top:24px;background:var(--black);color:#fff;border:none;padding:15px 40px;border-radius:14px;font-size:16px;font-weight:800;font-family:inherit;animation:fadeUp .5s .5s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-120px);background:#111;color:#fff;padding:14px 22px;border-radius:12px;font-size:14px;font-weight:600;z-index:300;transition:.35s cubic-bezier(.2,.8,.2,1);white-space:nowrap;max-width:90%}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast.error{background:#e63946}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <img src="https://i.postimg.cc/PfchV8HY/logo-png.jpg" alt="LAGRINTA STORE" class="brand-logo">
+    <div class="brand-text">
+      <b>LAGRINTA</b>
+      <span>SPORT</span>
+    </div>
+  </div>
+  <div class="cart-icon" onclick="openOrder()">🛒</div>
+</header>
+
+<div class="gallery">
+  <div class="slide" id="slide">
+    <img src="https://i.postimg.cc/KzjSJmsr/bar1-jpg.jpg" alt="بار فيكس 1">
+    <img src="https://i.postimg.cc/KzWXWC6Y/bar2-jpg.jpg" alt="بار فيكس 2">
+    <img src="https://i.postimg.cc/vT6Rw3yp/bar3-jpg.jpg" alt="بار فيكس 3">
+  </div>
+  <button class="nav prev" onclick="slideMove(-1)">‹</button>
+  <button class="nav next" onclick="slideMove(1)">›</button>
+  <div class="dots" id="dots">
+    <span class="active"></span><span></span><span></span>
+  </div>
+</div>
+
+<div class="content">
+  <div class="top-badge">🔥 الأكثر مبيعاً في الجزائر</div>
+  <h1>بار فيكس <span class="emoji">💪</span></h1>
+  <p class="desc">
+    بار فيكس قوي ومتين، مثالي لتمارين العقلة وتقوية عضلات الظهر، الذراعين والكتفين، وتطوير القوة والتحكم في وزن الجسم.
+  </p>
+
+  <div class="features">
+    <div class="feature"><span class="check">✓</span><span>هيكل فولاذي متين</span></div>
+    <div class="feature"><span class="check">✓</span><span>مناسب للتدريب المنزلي</span></div>
+    <div class="feature"><span class="check">✓</span><span>تمرّن في دارك دون قاعة رياضية</span></div>
+  </div>
+
+  <h3 class="section-title">| لماذا تشتري منا؟</h3>
+  <div class="perks-grid">
+    <div class="perk"><div class="ic blue">🚚</div><p>توصيل لـ 69 ولاية</p></div>
+    <div class="perk"><div class="ic green">💳</div><p>دفع عند الاستلام</p></div>
+    <div class="perk"><div class="ic purple">✅</div><p>منتج أصلي 100%</p></div>
+    <div class="perk"><div class="ic orange">🔁</div><>
+p>ضمان الإرجاع والاستبدال</p></div>
+  </</div>
+
+  <h3 class="section-title">| تdivابعنا على</h3>
+  <>
+
+div class="social-section">
+    <h3<>انضم إلى مجتمعنا الرياضي 💪footer</h3>
+    <p>تابعنا class للحصول على أحدث المنتجات والعروض</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/lagrinta_sport" target="_blank" rel="noopener" class="social-link ig shine" aria-label="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.67.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12.66.66 1.34 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.38.66-.66 1.08-1.34 1.38-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.12C21.33 1.35 20.65.93 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0z"/>
+          <path d="M12 5.84c-3.4 0-6.16 2.76-6.16 6.16s2.76 6.16 6.16 6.16 6.16-2.76 6.16-6.16S15.4 5.84 12 5.84zm0 10.16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+          <circle cx="18.41" cy="5.59" r="1.44"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@haytamlagrinta" target="_blank" rel="noopener" class="social-link tt shine" aria-label="TikTok">
+        <svg viewBox="0 0 24 24">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/share/1Cn9SLhGbG/" target="_blank" rel="noopener" class="social-link fb shine" aria-label="Facebook">
+        <svg viewBox="0 0 24 24">
+          <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07z"/>
+        </svg>
+      </a>
+    </div>
+  </div="footer">
+  <div class="brand-mini">
+    <img src="https://i.postimg.cc/PfchV8HY/logo-png.jpg" alt="">
+    <b style="color:#111">LAGRINTA SPORT</b>
+  </div>
+  <p>© 2026 LAGRINTA SPORT — كل الحقوق محفوظة</p>
+</footer>
+
+<div class="bottom-bar">
+  <button class="btn-buy" onclick="openOrder()">🛒 اشتري الآن</button>
+  <a href="tel:0652658352" class="btn-call" aria-label="اتصل بنا">📞</a>
+</div>
+
+<div class="modal" id="orderModal">
+  <div class="modal-head">
+    <button class="back" onclick="closeOrder()">✕</button>
+    <div class="title-box">
+      <h2>اطلب الآن - الدفع عند الاستلام</h2>
+      <p>أكمل معلوماتك لتأكيد الطلبية</p>
+    </div>
+    <div class="bag">🛍️</div>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PRODUCT_PRICE = 4900;
+const PHONE_NUMBER = "0652658352";
+const WORKER_URL = "https://lagrinta-orders.adem0002009.workers.dev";
+
+const WILAYAS = [
+  "01 - أدرار", "02 - الشلف", "03 - الأغواط", "04 - أم البواقي",
+  "05 - باتنة", "06 - بجاية", "07 - بسكرة", "08 - بشار",
+  "09 - البليدة", "10 - البويرة", "11 - تمنراست", "12 - تبسة",
+  "13 - تلمسان", "14 - تيارت", "15 - تيزي وزو", "16 - الجزائر",
+  "17 - الجلفة", "18 - جيجل", "19 - سطيف", "20 - سعيدة",
+  "21 - سكيكدة", "22 - سيدي بلعباس", "23 - عنابة", "24 - قالمة",
+  "25 - قسنطينة", "26 - المدية", "27 - مستغانم", "28 - المسيلة",
+  "29 - معسكر", "30 - ورقلة", "31 - وهران", "32 - البيض",
+  "33 - إليزي", "34 - برج بوعريريج", "35 - بومرداس", "36 - الطارف",
+  "37 - تندوف", "38 - تيسمسيلت", "39 - الوادي", "40 - خنشلة",
+  "41 - سوق أهراس", "42 - تيبازة", "43 - ميلة", "44 - عين الدفلى",
+  "45 - النعامة", "46 - عين تموشنت", "47 - غرداية", "48 - غليزان",
+  "49 - المغير", "50 - المنيعة", "51 - أولاد جلال", "52 - برج باجي مختار",
+  "53 - عين صالح", "54 - عين قزام", "55 - تقرت", "56 - جانت",
+  "57 - المغير", "58 - تيميمون",
+  "59 - أفلو", "60 - بريكة", "61 - القنطرة", "62 - بئر العاتر",
+  "63 - العريشة", "64 - قصر الشلالة", "65 - عين وسارة", "66 - مسعد",
+  "67 - قصر البخاري", "68 - بوسعادة", "69 - الأبيض سيدي الشيخ"
+];
+
+const SOUTH_CODES = ["01","08","11","30","32","33","37","39","47","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69"];
+
+function getFees(w) {
+  const south = SOUTH_CODES.some(c => w.startsWith(c));
+  return { home: south ? 900 : 600, office: south ? 700 : 500 };
+}
+
+let currentSlide = 0;
+let deliveryType = "home";
+
+function slideMove(dir) {
+  const total = 3;
+  currentSlide = (currentSlide + dir + total) % total;
+  document.getElementById("slide").style.transform = `translateX(${currentSlide * 100}%)`;
+  document.querySelectorAll(".dots span").forEach((d, i) => {
+    d.classList.toggle("active", i === currentSlide);
+  });
+}
+
+function openOrder() {
+  document.getElementById("orderModal").classList.add("show");
+  document.body.style.overflow = "hidden";
+  renderForm();
+}
+
+function closeOrder() {
+  document.getElementById("orderModal").classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+function renderForm() {
+  document.getElementById("modalBody").innerHTML = `
+    <form id="orderForm" onsubmit="submitOrder(event)" novalidate>
+
+      <div class="field" id="f-name">
+        <label>الاسم الكامل <span class="req">*</span></label>
+        <div class="wrap">
+          <span class="icon">👤</span>
+          <input type="text" id="fullname" placeholder="أحمد بن علي" autocomplete="name">
+        </div>
+        <div class="err">يرجى إدخال الاسم الكامل</div>
+      </div>
+
+      <div class="field" id="f-phone">
+        <label>رقم الهاتف <span class="req">*</span></label>
+        <div class="wrap">
+          <span class="icon">📞</span>
+          <input type="tel" id="phone" placeholder="05XXXXXXXX" maxlength="10" inputmode="numeric" autocomplete="tel">
+        </div>
+        <div class="err">رقم غير صحيح (يبدأ بـ 05 / 06 / 07)</div>
+      </div>
+
+      <div class="field" id="f-wilaya">
+        <label>الولاية <span class="req">*</span></label>
+        <div class="wrap">
+          <span class="icon">🗺️</span>
+          <select id="wilaya" onchange="updateFees()">
+            <option value="">اختر الولاية</option>
+            ${WILAYAS.map(w => `<option value="${w}">${w}</option>`).join("")}
+          </select>
+        </div>
+        <div class="err">يرجى اختيار الولاية</div>
+      </div>
+
+      <div class="field" id="f-baladiya">
+        <label>البلدية <span class="req">*</span></label>
+        <div class="wrap">
+          <span class="icon">🏢</span>
+          <input type="text" id="baladiya" placeholder="اكتب اسم البلدية">
+        </div>
+        <div class="err">يرجى إدخال البلدية</div>
+      </div>
+
+      <div class="field" id="f-address">
+        <label>العنوان بالتفصيل <span class="req">*</span></label>
+        <div class="wrap">
+          <span class="icon">🏠</span>
+          <input type="text" id="address" placeholder="اسم الشارع، رقم الباب، الحي...">
+        </div>
+        <div class="err">يرجى إدخال العنوان</div>
+      </div>
+
+      <label class="delivery-title">نوع التوصيل <span class="req">*</span></label>
+      <div class="delivery-grid">
+        <div class="d-box ${deliveryType === 'home' ? 'sel' : ''}" id="d-home" onclick="pickDelivery('home')">
+          <div class="d-ic">🏠</div>
+          <div class="d-name">للمنزل</div>
+        </div>
+        <div class="d-box ${deliveryType === 'office' ? 'sel' : ''}" id="d-office" onclick="pickDelivery('office')">
+          <div class="d-ic">🏢</div>
+          <div class="d-name">للمكتب</div>
+        </div>
+      </div>
+
+      <div class="ship-info">
+        <span>تكلفة التوصيل:</span>
+        <span><span class="ic">🚚</span><b id="shipFee">— دج</b></span>
+      </div>
+
+      <div class="summary">
+        <div class="sum-row">
+          <span>سعر المنتج</span>
+          <span>${PRODUCT_PRICE} دج</span>
+        </div>
+        <div class="sum-row">
+          <span>سعر التوصيل</span>
+          <span id="shipPrice">—</span>
+        </div>
+        <div class="sum-row total">
+          <span>المجموع الكلي</span>
+          <span id="totalPrice">—</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">
+        أرحل الطلبية
+      </button>
+    </form>
+  `;
+  updateFees();
+}
+
+function pickDelivery(type) {
+  deliveryType = type;
+  document.querySelectorAll(".d-box").forEach(b => b.classList.remove("sel"));
+  document.getElementById("d-" + type).classList.add("sel");
+  updateFees();
+}
+
+function updateFees() {
+  const w = document.getElementById("wilaya").value;
+  if (!w) {
+    document.getElementById("shipFee").textContent = "— دج";
+    document.getElementById("shipPrice").textContent = "—";
+    document.getElementById("totalPrice").textContent = "—";
+    return;
+  }
+  const fees = getFees(w);
+  const fee = deliveryType === "home" ? fees.home : fees.office;
+  document.getElementById("shipFee").textContent = fee + " دج";
+  document.getElementById("shipPrice").textContent = fee + " دج";
+  document.getElementById("totalPrice").textContent = (PRODUCT_PRICE + fee) + " دج";
+}
+
+async function submitOrder(e) {
+  e.preventDefault();
+  const btn = document.getElementById("submitBtn");
+
+  const fullname = document.getElementById("fullname").value.trim();
+  const phone    = document.getElementById("phone").value.trim();
+  const wilaya   = document.getElementById("wilaya").value;
+  const baladiya = document.getElementById("baladiya").value.trim();
+  const address  = document.getElementById("address").value.trim();
+
+  let ok = true;
+  ["f-name","f-phone","f-wilaya","f-baladiya","f-address"].forEach(id => {
+    document.getElementById(id).classList.remove("invalid");
+  });
+
+  if (fullname.length < 3) { document.getElementById("f-name").classList.add("invalid"); ok = false; }
+  if (!/^0[5-7][0-9]{8}$/.test(phone)) { document.getElementById("f-phone").classList.add("invalid"); ok = false; }
+  if (!wilaya) { document.getElementById("f-wilaya").classList.add("invalid"); ok = false; }
+  if (baladiya.length < 2) { document.getElementById("f-baladiya").classList.add("invalid"); ok = false; }
+  if (address.length < 3) { document.getElementById("f-address").classList.add("invalid"); ok = false; }
+
+  if (!ok) { showToast("يرجى ملء جميع الحقول المطلوبة", "error"); return; }
+
+  const fees = getFees(wilaya);
+  const fee = deliveryType === "home" ? fees.home : fees.office;
+
+  const payload = {
+    fullname, phone, wilaya, baladiya, address,
+    delivery: deliveryType === "home" ? "للمنزل" : "للمكتب",
+    product: "بار فيكس",
+    price: PRODUCT_PRICE,
+    shipping: fee,
+    total: PRODUCT_PRICE + fee
+  };
+
+  btn.disabled = true;
+  btn.innerHTML = 'جاري الإرسال... <span class="loader"></span>';
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const txt = await res.text();
+    if (txt.trim() === "ok") { showSuccess(); }
+    else throw new Error("fail");
+  } catch (err) {
+    showToast("تعذر إرسال الطلب، حاول مرة أخرى", "error");
+    btn.disabled = false;
+    btn.innerHTML = "أرحل الطلبية";
+  }
+}
+
+function showSuccess() {
+  document.getElementById("modalBody").innerHTML = `
+    <div class="success-screen">
+      <div class="success-circle"><span class="check">✓</span></div>
+      <h2>تم التقديم بنجاح!</h2>
+      <p>شكراً لك، تم استلام طلبك.</p>
+      <p>سيتصل بك فريقنا خلال <span class="highlight">24 ساعة</span> لتأكيد الطلبية.</p>
+      <button class="btn-done" onclick="closeOrder()">تم</button>
+    </div>
+  `;
+}
+
+function showToast(msg, type = "success") {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.className = `toast ${type} show`;
+  setTimeout(() => t.classList.remove("show"), 3000);
+}
+
+let touchStartX = 0;
+document.getElementById("slide").addEventListener("touchstart", e => {
+  touchStartX = e.touches[0].clientX;
+});
+document.getElementById("slide").addEventListener("touchend", e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) slideMove(diff > 0 ? 1 : -1);
+});
+
+document.getElementById("orderModal").addEventListener("click", e => {
+  if (e.target === e.currentTarget) closeOrder();
+});
+</script>
+</body>
+</html>
